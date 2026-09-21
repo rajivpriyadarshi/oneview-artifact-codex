@@ -1,0 +1,8 @@
+@import "../app/globals.css";
+
+/* The static entry lives outside app/, so name the class sources explicitly
+   instead of relying on Tailwind's automatic source detection. */
+@source "../app";
+@source "../components";
+@source "../hooks";
+@source "../lib";
