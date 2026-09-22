@@ -88,8 +88,6 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
           <ul className="text-[14px] space-y-2.5 text-[#55544e] font-sans leading-[1.55]">
             <li><strong>Risk:</strong> 54% of portfolio is held in the five largest tech names.</li>
             <li><strong>Risk:</strong> -12.4% portfolio impact from a uniform -20% technology shock.</li>
-            <li><strong>Data Gap:</strong> Cost basis on individual taxable account ($620K). Needs CPA verification before lot selection.</li>
-            <li><strong>Data Gap:</strong> Does "keep NVDA" cover the upcoming October vest?</li>
           </ul>
         </div>
       </div>
