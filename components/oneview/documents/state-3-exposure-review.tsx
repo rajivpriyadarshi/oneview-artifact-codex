@@ -21,7 +21,7 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
       timeline: "12 months"
     },
     {
-      id: "C",
+      id: "B",
       title: "Reach ~40% faster",
       subtitle: "Allow a modest NVDA reduction",
       desc: "Less of the burden falls on the other technology positions. Requires an open window and a precleared 10b5-1 plan.",
@@ -31,7 +31,7 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
       timeline: "6-9 months"
     },
     {
-      id: "D",
+      id: "C",
       title: "Extend the glide path",
       subtitle: "Spread the reduction over 18 months",
       desc: "Keep NVDA and split realization across three tax years, accepting higher concentration for longer.",
