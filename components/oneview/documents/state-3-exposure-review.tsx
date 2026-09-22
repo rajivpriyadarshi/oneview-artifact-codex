@@ -79,8 +79,6 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
           <ul className="text-[14px] space-y-2.5 text-[#55544e] font-sans leading-[1.55]">
             <li><strong>Client:</strong> Keep NVDA as a core holding; prefer staged changes; remain growth-oriented.</li>
             <li><strong>Client:</strong> $300K liquidity reserve sits outside this plan.</li>
-            <li><strong>Structural:</strong> NVDA requires preclearance/open window. Other 6 tech holdings are unrestricted.</li>
-            <li><strong>Structural:</strong> A $45K capital loss carryforward from 2024 is available once.</li>
           </ul>
         </div>
         <div className="p-5 rounded-xl bg-white border border-[#e8e4dc] shadow-sm space-y-3">
@@ -99,10 +97,10 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
       {/* Restored Tables & Charts from earlier version */}
       <div className="space-y-4">
         <h3 className="font-sans text-[18px] font-medium text-[#1c1d1a] border-b border-[#eeebe3] pb-2">
-          Drivers & Unmanaged Trend
+          Planned Reduction Trajectory
         </h3>
         <p className="font-sans text-[14.5px] text-[#55544e] leading-[1.6]">
-          Market appreciation (~$1.19M), equity compensation (~$344K), and deferred rebalancing have driven the weight from 48% to 62%. Without proactive rebalancing, incoming equity vests will maintain technology concentration above 55% throughout the next 12 months.
+          Market appreciation (~$1.19M) and equity compensation (~$344K) drove the weight from 48% to 62%. The chart below shows the planned glide path — reducing exposure from 62% today to ~44% by Q3 '27 across four quarters while preserving NVDA.
         </p>
         <TechExposureTrendEmbed currentPct={62} targetPct={44} />
       </div>
