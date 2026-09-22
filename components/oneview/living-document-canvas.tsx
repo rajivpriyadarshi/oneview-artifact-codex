@@ -51,11 +51,10 @@ export function LivingDocumentCanvas({
       case 6:
         return <State6PlanGeneratingDoc onNext={() => onSetStep(7)} />;
       case 7:
-        return <State7RefinedPlanDoc onApprovePlan={() => onSetStep(8)} />;
+        return <State7RefinedPlanDoc onApprovePlan={() => onSetStep(10)} />;
       case 8:
-        return <State8NewSignalDoc onReevaluate={() => onSetStep(9)} />;
       case 9:
-        return <State9UpdatedDirectionDoc onChooseDirection={() => onSetStep(10)} />;
+        return <State10NoteGeneratingDoc onNext={() => onSetStep(11)} />;
       case 10:
         return <State10NoteGeneratingDoc onNext={() => onSetStep(11)} />;
       case 11:

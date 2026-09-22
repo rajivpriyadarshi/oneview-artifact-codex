@@ -37,7 +37,9 @@ export function DemoController({
     if (!isPlaying) return;
 
     const timer = setTimeout(() => {
-      onSetStep(currentStep < 11 ? ((currentStep + 1) as PrototypeStateStep) : 1);
+      const next = currentStep < 11 ? currentStep + 1 : 1;
+      const skip = next === 8 || next === 9 ? 10 : next;
+      onSetStep(skip as PrototypeStateStep);
     }, 6000);
 
     return () => clearTimeout(timer);
@@ -122,7 +124,11 @@ export function DemoController({
             <button
               onClick={() => {
                 setIsPlaying(false);
-                if (currentStep > 1) onSetStep((currentStep - 1) as PrototypeStateStep);
+                if (currentStep > 1) {
+                  const prev = currentStep - 1;
+                  const skip = prev === 8 || prev === 9 ? 7 : prev;
+                  onSetStep(skip as PrototypeStateStep);
+                }
               }}
               disabled={currentStep === 1}
               className="p-1.5 rounded-lg bg-[#282925] hover:bg-[#383935] disabled:opacity-30 disabled:cursor-not-allowed text-white transition-colors"
@@ -146,7 +152,11 @@ export function DemoController({
             <button
               onClick={() => {
                 setIsPlaying(false);
-                if (currentStep < 11) onSetStep((currentStep + 1) as PrototypeStateStep);
+                if (currentStep < 11) {
+                  const next = currentStep + 1;
+                  const skip = next === 8 || next === 9 ? 10 : next;
+                  onSetStep(skip as PrototypeStateStep);
+                }
               }}
               disabled={currentStep === 11}
               className="p-1.5 rounded-lg bg-[#282925] hover:bg-[#383935] disabled:opacity-30 disabled:cursor-not-allowed text-white transition-colors"

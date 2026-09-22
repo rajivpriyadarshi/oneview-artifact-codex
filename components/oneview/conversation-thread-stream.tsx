@@ -46,11 +46,7 @@ export function ConversationThreadStream({
       case 5:
         return "Proceed with Branch A: Protect NVDA, Target ~44%.";
       case 7:
-        return "Northern Trust confirmed $420k NVDA vest.";
-      case 8:
-        return "Re-evaluate feasibility with incoming vest.";
-      case 9:
-        return "Adopt Option 1 (Extend to 15 months, absorb vest). Prepare client note.";
+        return "Prepare client discussion note.";
       default:
         return null;
     }
@@ -69,9 +65,7 @@ export function ConversationThreadStream({
     if (currentStep === 1) onSelectStep(2);
     else if (currentStep === 3) onSelectStep(4);
     else if (currentStep === 5) onSelectStep(6);
-    else if (currentStep === 7) onSelectStep(8);
-    else if (currentStep === 8) onSelectStep(9);
-    else if (currentStep === 9) onSelectStep(10);
+    else if (currentStep === 7) onSelectStep(10);
   };
 
   return (
