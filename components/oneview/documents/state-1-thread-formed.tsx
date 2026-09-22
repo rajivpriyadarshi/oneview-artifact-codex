@@ -9,7 +9,7 @@ export function State1ThreadFormedDoc({ onNext }: { onNext?: () => void }) {
       {/* Category Kicker */}
       <div className="flex items-center gap-2 text-[10px] font-mono uppercase font-bold tracking-widest text-[#8b6534]">
         <span className="w-2 h-2 rounded-full bg-[#8b6534] animate-pulse" />
-        <span>AUTONOMOUS SIGNAL DETECTION</span>
+        <span>CLIENT REQUEST</span>
       </div>
 
       {/* Main Title */}
@@ -18,7 +18,7 @@ export function State1ThreadFormedDoc({ onNext }: { onNext?: () => void }) {
           Manage tech concentration
         </h1>
         <p className="font-sans text-[14px] text-[#5a5952] leading-[1.55] mt-2">
-          Autonomous monitor detected Prashanth’s portfolio technology weighting has increased to 62%, exceeding the agreed 40–44% mandate preference.
+          Ad-hoc request from Prashanth: <em>"I’m worried about my US tech exposure after the recent market move. What should we do?"</em>
         </p>
       </div>
 

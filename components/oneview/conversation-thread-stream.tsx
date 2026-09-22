@@ -507,7 +507,7 @@ export function ConversationThreadStream({
                   </div>
                   <div className="min-w-0">
                     <div className="text-[12.5px] font-sans font-semibold text-[#18181b] truncate">
-                      Feasibility Re-evaluation
+                      Signal Impact Review
                     </div>
                     <div className="text-[11px] font-sans text-[#71717a]">
                       Vesting signal impact · 2 min
@@ -657,7 +657,7 @@ export function ConversationThreadStream({
           >
             <Sparkles className="w-3 h-3 text-[#8b6534] shrink-0" />
             <span className="text-[11px] font-sans text-[#6e6c64] group-hover:text-[#18181b] truncate flex-1">
-              {quickPrompt}
+              {currentStep === 3 ? `Path A: ${quickPrompt}` : quickPrompt}
             </span>
             <span className="text-[9.5px] font-mono font-bold text-[#8b6534] uppercase tracking-wider shrink-0">
               Send →

@@ -21,16 +21,6 @@ export function State3ExposureReviewDoc({ onAddGuidance }: { onAddGuidance?: () 
       timeline: "12 months"
     },
     {
-      id: "B",
-      title: "Set a tax budget first",
-      subtitle: "Cap the federal reserve near $60K",
-      desc: "Work only the highest-basis lots and allow the achievable concentration target to float.",
-      sales: "~$868K",
-      endState: "~48%",
-      tax: "~$58K",
-      timeline: "Flexible"
-    },
-    {
       id: "C",
       title: "Reach ~40% faster",
       subtitle: "Allow a modest NVDA reduction",

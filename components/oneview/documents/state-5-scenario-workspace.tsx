@@ -469,15 +469,6 @@ export function State5ScenarioWorkspaceDoc({
 
           {/* Section: Active Selected Scenario Explorer Card */}
           <div className="space-y-4 pt-1">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono uppercase tracking-wider text-[#8b6534] font-bold">
-                ACTIVE SCENARIO SPECIFICATION
-              </span>
-              <span className="text-xs font-sans text-[#71717a]">
-                Est. Tax Realization: <strong className="text-[#18181b] font-mono">{currentBranch.taxEst}</strong>
-              </span>
-            </div>
-
             <ScenarioExplorerPrimitive
               id={selectedBranch}
               title={currentBranch.title}

@@ -29,11 +29,12 @@ export function TechExposureTrendEmbed({
   const maxY = 70;
   const getY = (val: number) => padTop + chartH - ((val - minY) / (maxY - minY)) * chartH;
 
+  const drop = currentPct - targetPct; // 18 pts over 4 steps
   const points = [
     { label: "Today", x: padLeft, yVal: currentPct },
-    { label: "Q4 '26", x: padLeft + chartW * 0.25, yVal: showPostVestBump ? 51 : 47.6 },
-    { label: "Q1 '27", x: padLeft + chartW * 0.5, yVal: 46 },
-    { label: "Q2 '27", x: padLeft + chartW * 0.75, yVal: 45 },
+    { label: "Q4 '26", x: padLeft + chartW * 0.25, yVal: showPostVestBump ? currentPct - drop * 0.15 + 4 : Math.round(currentPct - drop * 0.25) },
+    { label: "Q1 '27", x: padLeft + chartW * 0.5, yVal: Math.round(currentPct - drop * 0.5) },
+    { label: "Q2 '27", x: padLeft + chartW * 0.75, yVal: Math.round(currentPct - drop * 0.75) },
     { label: "Q3 '27", x: padLeft + chartW, yVal: targetPct },
   ];
 
@@ -55,7 +56,7 @@ export function TechExposureTrendEmbed({
           className="w-full h-auto text-xs select-none block"
         >
           {/* Grid lines */}
-          {[30, 50, 70].map((level) => {
+          {[30, 40, 50, 60, 70].map((level) => {
             const y = getY(level);
             return (
               <g key={level}>
