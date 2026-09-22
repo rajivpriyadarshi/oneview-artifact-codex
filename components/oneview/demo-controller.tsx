@@ -96,7 +96,7 @@ export function DemoController({
 
           {/* Center: Step Selector Numbers (Fixed 11 Buttons) */}
           <div className="flex items-center gap-1 shrink-0 py-0.5">
-            {(Array.from({ length: 11 }, (_, i) => (i + 1) as PrototypeStateStep)).map((step) => {
+            {(Array.from({ length: 11 }, (_, i) => (i + 1) as PrototypeStateStep)).filter(s => s !== 8 && s !== 9).map((step) => {
               const isCurrent = step === currentStep;
               return (
                 <button
